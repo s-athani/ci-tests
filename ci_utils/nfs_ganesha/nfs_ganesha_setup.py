@@ -45,6 +45,10 @@ NFSv4 {{
     {delegations_v4}
 }}
 
+CEPH {{
+    async = false;
+}}
+
 EXPORT_DEFAULTS {{
     Access_Type = RW;
 }}
