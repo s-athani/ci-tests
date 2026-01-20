@@ -203,7 +203,10 @@ def test_bringup_cephfs(remote_sessions, reserved_nodes):
         ganesha_setup = GaneshaManager(
             session=server,
             subvol_path=subvol_path,
-            cephfs_name=ceph_setup.cephfs_name
+            cephfs_name=ceph_setup.cephfs_name,
+            delegations_v4="true",
+            delegations_export="readwrite",
+            ceph_async="false"
         )
         ganesha_setup.setup()
         assert f"CephFS setup completed"
