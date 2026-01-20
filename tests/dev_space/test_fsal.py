@@ -24,7 +24,7 @@ PARAM_KEYS = [
     "CENTOS_VERSION",
     "CENTOS_ARCH",
 ]
-NFS_GANESHA_REPO = "/tmp/workspace/sanity_dev/nfs-ganesha"
+NFS_GANESHA_REPO = "/tmp/workspace/deleg/nfs-ganesha"
 
 @pytest.fixture(scope="session", autouse=True)
 def ci_params():
